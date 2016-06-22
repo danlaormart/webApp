@@ -39,7 +39,7 @@ public class ProductRepositoryTest {
         product.setDescription("Wat Class Shirt");
         product.setPrice(new BigDecimal("18.95"));
         product.setProductId("12345");
-
+        product.setComments("Hello");
         //save product, verify has ID value after save
         assertNull(product.getId()); //null before save
         productRepository.save(product);
