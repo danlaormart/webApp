@@ -18,6 +18,7 @@
                 <th>Description</th>
                 <th>Price</th>
                 <th>View</th>
+                <th>Comments</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
@@ -27,6 +28,7 @@
                 <td th:text="${product.description}">descirption</td>
                 <td th:text="${product.price}">price</td>
                 <td><a th:href="${'/product/' + product.id}">View</a></td>
+                <td th:text="${product.comments}">Comments</td>
                 <td><a th:href="${'/product/edit/' + product.id}">Edit</a></td>
                 <td><a th:href="${'/product/delete/' + product.id}">Delete</a></td>
             </tr>

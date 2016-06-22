@@ -36,6 +36,7 @@ public class DatabaseLoader implements ApplicationListener<ContextRefreshedEvent
         designer_mug.setPrice(new BigDecimal("20.95"));
         designer_mug.setImageUrl("http://galaxy.agh.edu.pl/~marekko/wat/store/bc93c37e51b613a87e3750c65b72b6db.jpg");
         designer_mug.setProductId("235268845711068308");
+        designer_mug.setComments("loool");
         productRepository.save(designer_mug);
 
         log.info("Saved Designer Mug - id: " + designer_mug.getId());
