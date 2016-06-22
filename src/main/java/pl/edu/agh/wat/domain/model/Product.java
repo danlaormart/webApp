@@ -24,6 +24,8 @@ public class Product {
     @Size(min=5, max= 100, message = "{error.product.type.size}")
     private String description;
     @Size(min=5, max= 100, message = "{error.product.type.size}")
+    private String  comments;
+    @Size(min=5, max= 100, message = "{error.product.type.size}")
     private String imageUrl;
     @Digits(integer = 5, fraction = 2, message = "{error.product.type.size}" )
     private BigDecimal price;
@@ -36,6 +38,13 @@ public class Product {
         this.description = description;
     }
 
+public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
     public Integer getVersion() {
         return version;
     }
