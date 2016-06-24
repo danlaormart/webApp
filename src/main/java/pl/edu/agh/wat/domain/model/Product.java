@@ -23,7 +23,7 @@ public class Product {
     private String productId;
     @Size(min=5, max= 100, message = "{error.product.type.size}")
     private String description;
-    @Size(min=5, max= 100, message = "{error.product.type.size}")
+    @Size(min=1, max= 100, message = "{error.product.type.size}")
     private String  comments;
     @Size(min=5, max= 100, message = "{error.product.type.size}")
     private String imageUrl;
